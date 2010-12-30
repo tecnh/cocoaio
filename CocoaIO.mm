@@ -148,7 +148,7 @@ const char* constForAction(NSString* action) {
 	mNots()->push_back(new_not);
 }
 
-- (void)stopNotifiyWhenMatches:(NSDictionary*)match_dict are:(NSString*)action {
+- (void)stopNotifyWhenMatches:(NSDictionary*)match_dict are:(NSString*)action {
 	not_vec_t::iterator it=mNots()->begin(), e=mNots()->end();
 	for (; it!=e; it++)
 		if ([(*it).d isEqualToDictionary:match_dict]) {
