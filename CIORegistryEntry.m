@@ -32,7 +32,7 @@ const char* planeForName(NSString* name) {
 	if ([name isEqualToString:CIOAudioPlane]) return kIOAudioPlane;
 	if ([name isEqualToString:CIOFireWirePlane]) return kIOFireWirePlane;
 	if ([name isEqualToString:CIOUSBPlane]) return kIOUSBPlane;
-	NSLog(@"Unknown plane %@. Using service plane.");
+	//NSLog(@"Unknown plane %@. Using service plane.");
 	return kIOServicePlane;
 }
 
