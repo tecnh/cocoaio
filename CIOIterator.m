@@ -18,9 +18,9 @@
 
 NSArray* CIOIteratorAllObjs(io_iterator_t ittr) {
 	IOIteratorReset(ittr);
-	NSMutableArray* a = [NSMutableArray new];
+	NSMutableArray* a = [[NSMutableArray alloc] init];
 	io_object_t o;
-	while (o = IOIteratorNext(ittr)) {
+	while ((o = IOIteratorNext(ittr))) {
 		id oco = [CIOObject wrap:o];
 		[a addObject:oco];
 		[oco ioAutorelease];
