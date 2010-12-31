@@ -36,7 +36,7 @@ CIO_EXTERN_C NSString* CIOMatchingNotification;
 //Notifications
 //action is one of @"Published", @"Terminated", @"FirstPublished", @"Matched", @"FirstMatched"
 - (void)notifyWhenMatches:(NSDictionary*)match_dict are:(NSString*)action;
-- (void)stopNotifiyWhenMatches:(NSDictionary*)match_dict are:(NSString*)action;
+- (void)stopNotifyWhenMatches:(NSDictionary*)match_dict are:(NSString*)action;
 
 //Navigation around the registry
 - (CIORegistryEntry*)registryRoot;
